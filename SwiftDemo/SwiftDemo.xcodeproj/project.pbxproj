@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		21E1974A2068C14700F4E162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E197492068C14700F4E162 /* AppDelegate.swift */; };
-		21E1974C2068C14700F4E162 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E1974B2068C14700F4E162 /* ViewController.swift */; };
 		21E1974F2068C14700F4E162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21E1974D2068C14700F4E162 /* Main.storyboard */; };
 		21E197512068C14700F4E162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21E197502068C14700F4E162 /* Assets.xcassets */; };
 		21E197542068C14700F4E162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21E197522068C14700F4E162 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		21E197462068C14700F4E162 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21E197492068C14700F4E162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		21E1974B2068C14700F4E162 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		21E1974E2068C14700F4E162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21E197502068C14700F4E162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21E197532068C14700F4E162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,13 +53,68 @@
 			isa = PBXGroup;
 			children = (
 				21E197492068C14700F4E162 /* AppDelegate.swift */,
-				21E1974B2068C14700F4E162 /* ViewController.swift */,
+				21E1975D2068C77900F4E162 /* Classes */,
 				21E1974D2068C14700F4E162 /* Main.storyboard */,
 				21E197502068C14700F4E162 /* Assets.xcassets */,
 				21E197522068C14700F4E162 /* LaunchScreen.storyboard */,
 				21E197552068C14700F4E162 /* Info.plist */,
 			);
 			path = SwiftDemo;
+			sourceTree = "<group>";
+		};
+		21E1975D2068C77900F4E162 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				21E197632068C77900F4E162 /* Main */,
+				21E1975E2068C77900F4E162 /* Home */,
+				21E197622068C77900F4E162 /* Live */,
+				21E197602068C77900F4E162 /* Follow */,
+				21E197612068C77900F4E162 /* Me */,
+				21E1975F2068C77900F4E162 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		21E1975E2068C77900F4E162 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		21E1975F2068C77900F4E162 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		21E197602068C77900F4E162 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		21E197612068C77900F4E162 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		21E197622068C77900F4E162 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		21E197632068C77900F4E162 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +189,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21E1974C2068C14700F4E162 /* ViewController.swift in Sources */,
 				21E1974A2068C14700F4E162 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +326,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62XB2ZWQ9U;
 				INFOPLIST_FILE = SwiftDemo/Info.plist;
@@ -281,7 +334,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test.SwiftDemo---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -289,6 +342,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62XB2ZWQ9U;
 				INFOPLIST_FILE = SwiftDemo/Info.plist;
@@ -296,7 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test.SwiftDemo---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
